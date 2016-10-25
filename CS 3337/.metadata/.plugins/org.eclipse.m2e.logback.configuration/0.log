@@ -1,0 +1,35 @@
+2016-09-10 14:32:24,982 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-09-10 19:51:02,897 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-09-11 01:58:18,761 [Worker-14] ERROR o.e.r.s.GitSnippetRepository - Transport operation failed.
+org.eclipse.jgit.api.errors.TransportException: Premature EOF
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:139) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.fetch(GitSnippetRepository.java:190) ~[org.eclipse.recommenders.snipmatch_2.3.0.v20160216-1255.jar:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.open(GitSnippetRepository.java:84) ~[org.eclipse.recommenders.snipmatch_2.3.0.v20160216-1255.jar:na]
+	at org.eclipse.recommenders.internal.snipmatch.rcp.EclipseGitSnippetRepository$2.run(EclipseGitSnippetRepository.java:166) [org.eclipse.recommenders.snipmatch.rcp_2.3.0.v20160216-1255.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.jgit.errors.TransportException: Premature EOF
+	at org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefs(BasePackConnection.java:184) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpFetchConnection.<init>(TransportHttp.java:769) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:302) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1138) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	... 4 common frames omitted
+Caused by: java.io.IOException: Premature EOF
+	at sun.net.www.http.ChunkedInputStream.readAheadBlocking(ChunkedInputStream.java:565) ~[na:1.8.0_73]
+	at sun.net.www.http.ChunkedInputStream.readAhead(ChunkedInputStream.java:609) ~[na:1.8.0_73]
+	at sun.net.www.http.ChunkedInputStream.read(ChunkedInputStream.java:696) ~[na:1.8.0_73]
+	at java.io.FilterInputStream.read(FilterInputStream.java:133) ~[na:1.8.0_73]
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3336) ~[na:1.8.0_73]
+	at org.eclipse.jgit.util.IO.readFully(IO.java:247) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:186) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.PacketLineIn.readString(PacketLineIn.java:138) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefsImpl(BasePackConnection.java:197) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	at org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefs(BasePackConnection.java:178) ~[org.eclipse.jgit_4.1.1.201511131810-r.jar:4.1.1.201511131810-r]
+	... 10 common frames omitted
+2016-09-11 02:24:03,140 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-10-22 17:08:56,558 [Worker-20] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-10-24 17:51:23,868 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is out-of-date. Remote download required.
+2016-10-24 19:54:37,121 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.
+2016-10-24 21:34:46,727 [main] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache file is not out-of-date. No remote download required.

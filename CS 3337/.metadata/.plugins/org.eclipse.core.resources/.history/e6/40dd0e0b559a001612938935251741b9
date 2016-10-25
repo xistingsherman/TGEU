@@ -1,0 +1,48 @@
+package TGEU;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.ProgressIndicator;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+
+public class LoginController  implements Initializable{
+	private Stage theStage;
+	/*Buttons*/
+	@FXML
+	private Button loginButton;
+	@FXML
+	private ProgressIndicator indicator;
+	@FXML
+	private StackPane stackPane;
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+	}
+
+    public void setStage2Controller(Stage theStage) {
+        this.theStage = theStage ;
+    }
+    
+	public void login(){
+		System.out.println("LOG ME IN BRO!");
+		stackPane.getChildren().remove(loginButton);
+		indicator.setVisible(true);
+		indicator.setProgress(-1.0);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+		}
+		
+	}
+	
+	
+
+	
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blackjack.MainController">
+   <children>
+      <GridPane layoutY="6.0" prefHeight="640.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="cardOne" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@resource/cardback.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cardTwo" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@resource/cardback.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="221.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fx:id="cardThree" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@resource/cardback.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cardFour" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@resource/cardback.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="221.0" />
+               </GridPane.margin>
+            </ImageView>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="hit2" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="-50.0" />
+                     </GridPane.margin></ImageView>
+                  <Button mnemonicParsing="false" onAction="#deal" prefHeight="60.0" prefWidth="220.0" text="Deal" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets top="-50.0" />
+                     </GridPane.margin>
+                  </Button>                     
+                  <Button mnemonicParsing="false" onAction="#betTen" prefHeight="60.0" prefWidth="100.0" text="Bet $10" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="120.0" top="100.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#stand" prefHeight="60.0" prefWidth="100.0" text="Stand" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="50.0" left="120.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#hit" prefHeight="60.0" prefWidth="100.0" text="Hit" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="50.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#betThree" prefHeight="60.0" prefWidth="100.0" text="Bet $3" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets top="100.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <ImageView fx:id="hit1" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5">
+                     <GridPane.margin>
+                        <Insets left="-50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="hit3" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="hit4" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" GridPane.rowIndex="1" />
+                  <ImageView fx:id="hit5" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5">
+                     <GridPane.margin>
+                        <Insets left="50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="hit6" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.5" scaleY="0.5" GridPane.rowIndex="1" />
+                  <ImageView fx:id="hit7" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.25" scaleY="0.25">
+                     <GridPane.margin>
+                        <Insets left="-50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="hit8" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.25" scaleY="0.25" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="-50.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="hit9" fitHeight="300.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" scaleX="0.25" scaleY="0.25" />
+                  <Label text="First Deal, then make a bet, then hit or stand." GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="-50.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="displayMoney" prefHeight="60.0" prefWidth="200.0" text="\$500">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="value" prefHeight="60.0" prefWidth="200.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

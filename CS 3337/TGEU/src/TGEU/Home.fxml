@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TGEU.HomeController">
+   <children>
+      <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dumbbell.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="gymButton" alignment="CENTER" mnemonicParsing="false" onAction="#toGym" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: Black;" text="My Gym" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exercise.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fitnessButton" mnemonicParsing="false" onAction="#toFitnessLog" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: Black;" text="Fitness Log" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@meal.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="foodButton" mnemonicParsing="false" onAction="#toFoodDiary" prefHeight="75.0" prefWidth="250.0" style="-fx-background-color: Black;" text="Food Diary" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

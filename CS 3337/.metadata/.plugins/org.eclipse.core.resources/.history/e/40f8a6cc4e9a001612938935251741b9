@@ -1,0 +1,27 @@
+package TGEU;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+
+public class LoginController  implements Initializable{
+
+	/*Buttons*/
+	@FXML
+	private Button loginButton;
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+	}
+	
+	public void login(){
+		System.out.println("LOG ME IN BRO!");
+	}
+	
+
+	
+}

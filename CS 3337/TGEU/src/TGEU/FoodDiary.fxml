@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Food Diary">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <HBox>
+         <children>
+            <Button fx:id="pageLeft" mnemonicParsing="false" prefHeight="26.0" prefWidth="59.0" text="&lt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label fx:id="date" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="233.0" text="November 5, 2016" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="pageRight" mnemonicParsing="false" prefHeight="0.0" prefWidth="61.0" text="&gt;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pizza.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="foodName" text="Pizza">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="nutritionTable" prefHeight="213.0" prefWidth="350.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="170.0" resizable="false" sortable="false" />
+          <TableColumn editable="false" minWidth="0.0" prefWidth="180.0" resizable="false" sortable="false" text="g" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

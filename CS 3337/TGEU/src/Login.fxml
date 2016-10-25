@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="GYM BRO">
+         <font>
+            <Font size="70.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="281.0" fitWidth="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@weightlift.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginButton" mnemonicParsing="false" text="LOGIN">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
