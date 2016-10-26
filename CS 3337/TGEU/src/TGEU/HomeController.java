@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 public class HomeController implements Initializable{
 	private static Stage stage;
+	private static Scene home;
 //	private static Stage prevStage;
 	/*Buttons*/
 	@FXML
@@ -26,15 +27,20 @@ public class HomeController implements Initializable{
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		
 	}
 	
 	public static void setStage(Stage s) {
         stage = s;
     }
+	public static void setHome(Scene h) {
+		home = h;
+		
+	}
 	
 	public void toGym(){
 		try {
+			LocationController.setStage(stage);
+			LocationController.setHome(home);
 			Pane pane = FXMLLoader.load(getClass().getResource("SelectLocation.fxml"));
 			stage.setScene(new Scene(pane, 350, 500));
 		} catch (IOException e) {
@@ -43,23 +49,29 @@ public class HomeController implements Initializable{
 	}
 	
 	public void toFitnessLog(){
+		
+		FitnessController.setStage(stage);
+		
+		Pane pane;
 		try {
-			Pane pane = FXMLLoader.load(getClass().getResource("Fitness.fxml"));
-			stage.setScene(new Scene(pane, 350, 500));
+			pane = FXMLLoader.load(getClass().getResource("Fitness.fxml"));
+			Scene scene = new Scene(pane, 350, 500);
+			FitnessController.setHome(home);
+			stage.setScene(scene);
 		} catch (IOException e) {
-			System.out.println("Nope.");
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	
 	public void toFoodDiary(){
 		try {
 			Pane pane = FXMLLoader.load(getClass().getResource("FoodDiary.fxml"));
+			FoodDiaryController.setStage(stage);
+			FoodDiaryController.setHome(home);
 			stage.setScene(new Scene(pane, 350, 500));
 		} catch (IOException e) {
-			System.out.println("Nope.");
+			e.printStackTrace();
 		}
-	}
-
-
-	
+	}	
 }

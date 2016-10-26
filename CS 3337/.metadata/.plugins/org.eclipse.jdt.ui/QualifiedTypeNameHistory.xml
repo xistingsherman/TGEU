@@ -19,4 +19,5 @@
 <fullyQualifiedTypeName name="javafx.stage.Stage"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+<fullyQualifiedTypeName name="TGEU.FitnessController"/>
 </qualifiedTypeNameHistroy>

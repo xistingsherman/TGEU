@@ -14,10 +14,13 @@ import javafx.stage.Stage;
 
 public class MyGymController  implements Initializable{
 	private static Stage stage;
-
+	private static Scene home;
+	
 	/*Buttons*/
 	@FXML
 	private Button loginButton;
+	@FXML
+	private Button homeButton;
 
 	
 	@Override
@@ -27,6 +30,9 @@ public class MyGymController  implements Initializable{
 
     public static void setStage(Stage s) {
         stage = s;
+    }
+    public static void setHome(Scene h) {
+        home = h;
     }
     
 	public void login(){
@@ -38,8 +44,10 @@ public class MyGymController  implements Initializable{
 		} catch (IOException e) {
 			System.out.println("Nope.");
 		}
-		
-		
+	}
+	
+	public void toHome(){
+		stage.setScene(home);
 	}
 	
 	

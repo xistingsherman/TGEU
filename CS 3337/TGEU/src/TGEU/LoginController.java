@@ -22,7 +22,7 @@ public class LoginController  implements Initializable{
 	@FXML
 	private Button loginButton;
 	@FXML
-	private ProgressIndicator indicator;
+	private ProgressIndicator progressIndicator;
 	@FXML
 	private StackPane stackPane;
 	
@@ -36,16 +36,18 @@ public class LoginController  implements Initializable{
     }
     
 	public void login(){
-		System.out.println("LOG ME IN BRO!");
-		this.indicator.setVisible(true);
-		this.indicator.setProgress(-1.0);
-//		this.stackPane.getChildren().remove(loginButton);
-		this.loginButton.setVisible(false);
+//		progressIndicator.setProgress(-1.0);
+//		progressIndicator.setVisible(true);
+		
+//		stackPane.getChildren().remove(loginButton);
+//		loginButton.setVisible(false);
 		try {
-			Thread.sleep(3000);
+//			Thread.sleep(3000);
 			Pane pane = FXMLLoader.load(getClass().getResource("Home.fxml"));
 			HomeController.setStage(stage);
-			stage.setScene(new Scene(pane, 350, 500));
+			Scene home = new Scene(pane, 350, 500);
+			HomeController.setHome(home);
+			stage.setScene(home);
 		} catch (InterruptedException e) {
 			System.out.println("Guess that didn't work");
 		} catch (IOException e) {
