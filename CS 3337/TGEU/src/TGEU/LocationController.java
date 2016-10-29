@@ -19,9 +19,7 @@ public class LocationController  implements Initializable{
 	/*Buttons*/
 	@FXML
 	private Button alhambraButton;
-	@FXML
-	private Button losAngelesButton;
-	
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
@@ -39,19 +37,10 @@ public class LocationController  implements Initializable{
 			MyGymController.setStage(stage);
 			stage.setScene(new Scene(pane, 350, 500));
 		} catch (IOException e) {
-			System.out.println("Nope.");
+			e.printStackTrace();
 		}
 	}
-	public void selectLosAngeles(){
-		try {
-			Pane pane = FXMLLoader.load(getClass().getResource("MyGym.fxml"));
-			MyGymController.setHome(home);
-			MyGymController.setStage(stage);
-			stage.setScene(new Scene(pane, 350, 500));
-		} catch (IOException e) {
-			System.out.println("Nope.");
-		}
-	}
+
 	public void toHome(){
 		stage.setScene(home);
 	}

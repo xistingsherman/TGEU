@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 public class HomeController implements Initializable{
 	private static Stage stage;
 	private static Scene home;
-//	private static Stage prevStage;
+
 	/*Buttons*/
 	@FXML
 	private Button gymButton;
@@ -44,17 +44,14 @@ public class HomeController implements Initializable{
 			Pane pane = FXMLLoader.load(getClass().getResource("SelectLocation.fxml"));
 			stage.setScene(new Scene(pane, 350, 500));
 		} catch (IOException e) {
-			System.out.println("Nope.");
+			e.printStackTrace();
 		}
 	}
 	
 	public void toFitnessLog(){
-		
 		FitnessController.setStage(stage);
-		
-		Pane pane;
 		try {
-			pane = FXMLLoader.load(getClass().getResource("Fitness.fxml"));
+			Pane pane = FXMLLoader.load(getClass().getResource("Fitness.fxml"));
 			Scene scene = new Scene(pane, 350, 500);
 			FitnessController.setHome(home);
 			stage.setScene(scene);

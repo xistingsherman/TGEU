@@ -36,20 +36,12 @@ public class LoginController  implements Initializable{
     }
     
 	public void login(){
-//		progressIndicator.setProgress(-1.0);
-//		progressIndicator.setVisible(true);
-		
-//		stackPane.getChildren().remove(loginButton);
-//		loginButton.setVisible(false);
 		try {
-//			Thread.sleep(3000);
 			Pane pane = FXMLLoader.load(getClass().getResource("Home.fxml"));
 			HomeController.setStage(stage);
 			Scene home = new Scene(pane, 350, 500);
 			HomeController.setHome(home);
 			stage.setScene(home);
-		} catch (InterruptedException e) {
-			System.out.println("Guess that didn't work");
 		} catch (IOException e) {
 			System.out.println("Nope.");
 		}
