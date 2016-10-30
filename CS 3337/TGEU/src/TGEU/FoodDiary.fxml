@@ -32,22 +32,36 @@
             </Button>
          </children>
       </HBox>
-      <ImageView fitHeight="112.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@pizza.png" />
-         </image>
-      </ImageView>
-      <Label fx:id="foodName" text="Pizza">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <TableView fx:id="nutritionTable" prefHeight="128.0" prefWidth="350.0">
-        <columns>
-          <TableColumn editable="false" prefWidth="170.0" resizable="false" sortable="false" />
-          <TableColumn editable="false" minWidth="0.0" prefWidth="180.0" resizable="false" sortable="false" text="g" />
-        </columns>
-      </TableView>
+      <ScrollPane prefViewportHeight="287.0" prefViewportWidth="350.0">
+         <content>
+            <AnchorPane prefHeight="500.0">
+               <children>
+                  <ImageView fitHeight="188.0" fitWidth="198.0" layoutX="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pizza.jpg" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="nutritionTable" layoutY="182.0" prefHeight="192.0" prefWidth="348.0">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="106.0" resizable="false" sortable="false" />
+                      <TableColumn editable="false" minWidth="0.0" prefWidth="118.0" resizable="false" sortable="false" />
+                        <TableColumn editable="false" prefWidth="122.0" resizable="false" sortable="false" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="foodName" layoutX="144.0" layoutY="114.0" prefHeight="35.0" prefWidth="61.0" text="Pizza">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="136.0" layoutY="149.0" text="(Lunch)">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
       <Button fx:id="homeButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" prefHeight="51.0" prefWidth="58.0" text="Button">
          <graphic>
             <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">

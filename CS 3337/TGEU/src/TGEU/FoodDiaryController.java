@@ -3,10 +3,13 @@ package TGEU;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 public class FoodDiaryController  implements Initializable{
@@ -16,10 +19,14 @@ public class FoodDiaryController  implements Initializable{
 	/*Buttons*/
 	@FXML
 	private Button homeButton;
+	@FXML
+	private TableView nutritionTable;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
+		//Table tutorial: http://www.java2s.com/Tutorials/Java/JavaFX/0650__JavaFX_TableView.htm
+		
+		
 	}
 
     public static void setStage(Stage s) {

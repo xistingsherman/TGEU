@@ -23,4 +23,8 @@
 <fullyQualifiedTypeName name="javafx.collections.ObservableList"/>
 <fullyQualifiedTypeName name="javafx.scene.chart.PieChart"/>
 <fullyQualifiedTypeName name="javafx.collections.FXCollections"/>
+<fullyQualifiedTypeName name="javafx.scene.chart.LineChart"/>
+<fullyQualifiedTypeName name="javafx.scene.chart.CategoryAxis"/>
+<fullyQualifiedTypeName name="javafx.scene.chart.NumberAxis"/>
+<fullyQualifiedTypeName name="javafx.scene.chart.XYChart"/>
 </qualifiedTypeNameHistroy>
