@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TGEU.LocationController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="place.png" />
+         </image>
+      </ImageView>
+      <Label text="Select a Location">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="alhambraButton" mnemonicParsing="false" onAction="#selectAlhambra" text="Alhambra">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

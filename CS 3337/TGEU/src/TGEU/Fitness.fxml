@@ -14,7 +14,7 @@
             <Font size="35.0" />
          </font>
       </Label>
-      <ScrollPane prefHeight="400.0" prefViewportHeight="450.0" prefViewportWidth="350.0" prefWidth="350.0">
+      <ScrollPane prefHeight="340.0" prefViewportHeight="450.0" prefViewportWidth="350.0" prefWidth="350.0">
          <content>
             <ScrollPane prefHeight="800.0" prefViewportHeight="449.0" prefViewportWidth="350.0">
                <content>
@@ -165,7 +165,7 @@
                               <Font size="24.0" />
                            </font>
                         </TitledPane>
-                        <TitledPane animated="false" layoutX="10.0" layoutY="160.0" prefHeight="398.0" prefWidth="350.0" text="User Average">
+                        <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="45.0" prefWidth="350.0" text="User Average">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
@@ -179,9 +179,9 @@
             </ScrollPane>
          </content>
       </ScrollPane>
-      <Button fx:id="backButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="43.0" prefWidth="68.0" style="-fx-background-image: C:\Users\Ali\Documents\School\Fall 2016\CS 3337\TGEU\src\TGEU\home.png;" styleClass="C:\Users\Ali\Documents\School\Fall 2016\CS 3337\TGEU\src\TGEU\home.png" text="Button">
+      <Button fx:id="homeButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" prefHeight="51.0" prefWidth="58.0" text="Button">
          <graphic>
-            <ImageView fx:id="homeButton" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@home.png" />
                </image>

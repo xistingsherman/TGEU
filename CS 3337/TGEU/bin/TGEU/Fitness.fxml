@@ -7,20 +7,20 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TGEU.FitnessController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TGEU.FitnessController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="374.0" text="Fitness Log" textAlignment="CENTER">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <ScrollPane prefHeight="500.0" prefViewportHeight="450.0" prefViewportWidth="350.0">
+      <ScrollPane prefHeight="340.0" prefViewportHeight="450.0" prefViewportWidth="350.0" prefWidth="350.0">
          <content>
             <ScrollPane prefHeight="800.0" prefViewportHeight="449.0" prefViewportWidth="350.0">
                <content>
                   <Accordion>
                     <panes>
-                      <TitledPane alignment="TOP_LEFT" animated="false" prefHeight="360.0" prefWidth="350.0" text="Sunday: Oct 30, 2016">
+                      <TitledPane alignment="TOP_LEFT" animated="false" prefHeight="244.0" prefWidth="350.0" text="Sunday: Oct 30, 2016">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
@@ -165,7 +165,7 @@
                               <Font size="24.0" />
                            </font>
                         </TitledPane>
-                        <TitledPane animated="false" layoutX="10.0" layoutY="160.0" prefHeight="398.0" prefWidth="350.0" text="User Average">
+                        <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" layoutX="10.0" layoutY="160.0" prefHeight="45.0" prefWidth="350.0" text="User Average">
                            <content>
                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                            </content>
@@ -179,5 +179,14 @@
             </ScrollPane>
          </content>
       </ScrollPane>
+      <Button fx:id="homeButton" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#toHome" prefHeight="51.0" prefWidth="58.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </VBox>

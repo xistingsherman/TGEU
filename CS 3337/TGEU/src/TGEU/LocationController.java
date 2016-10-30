@@ -14,46 +14,35 @@ import javafx.stage.Stage;
 
 public class LocationController  implements Initializable{
 	private static Stage stage;
+	private static Scene home;
 
 	/*Buttons*/
 	@FXML
-	private Button loginButton;
+	private Button alhambraButton;
 
-	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
 	}
-
     public static void setStage(Stage s) {
         stage = s;
     }
-    
+    public static void setHome(Scene h) {
+        home = h;
+    }
 	public void selectAlhambra(){
-		
 		try {
 			Pane pane = FXMLLoader.load(getClass().getResource("MyGym.fxml"));
+			MyGymController.setHome(home);
+			MyGymController.setStage(stage);
 			stage.setScene(new Scene(pane, 350, 500));
 		} catch (IOException e) {
-			System.out.println("Nope.");
+			e.printStackTrace();
 		}
-		
-		
 	}
-	public void selectLosAngeles(){
-		
-		try {
-			Pane pane = FXMLLoader.load(getClass().getResource("MyGym.fxml"));
-			stage.setScene(new Scene(pane, 350, 500));
-		} catch (IOException e) {
-			System.out.println("Nope.");
-		}
-		
-		
-	}
-	
-	
 
-	
+	public void toHome(){
+		stage.setScene(home);
+	}
 }
 
