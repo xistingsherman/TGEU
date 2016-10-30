@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import java.sql.Connection;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -23,7 +25,23 @@ public class MyGymController  implements Initializable{
 	private Button homeButton;
 	@FXML
 	private PieChart chartOfPie;
-	
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ObservableList<PieChart.Data> pieChartData =
