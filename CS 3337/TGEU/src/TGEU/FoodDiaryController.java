@@ -26,8 +26,7 @@ public class FoodDiaryController  implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		//Table tutorial: http://www.java2s.com/Tutorials/Java/JavaFX/0650__JavaFX_TableView.htm
 		
-		
-	}
+			}
 
     public static void setStage(Stage s) {
         stage = s;

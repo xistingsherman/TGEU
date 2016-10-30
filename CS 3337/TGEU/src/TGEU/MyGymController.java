@@ -3,6 +3,8 @@ package TGEU;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import java.sql.Connection;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -23,9 +25,29 @@ public class MyGymController  implements Initializable{
 	private Button homeButton;
 	@FXML
 	private PieChart chartOfPie;
+<<<<<<< HEAD
 	@FXML
     private LineChart<String,Number> dailyHistory;
 	
+=======
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+	//TEST
+>>>>>>> c194e16d5ccaca276e6334da3f397e1d59e5bad5
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		ObservableList<PieChart.Data> pieChartData =
