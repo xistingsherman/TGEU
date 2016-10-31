@@ -1,9 +1,13 @@
 package TGEU;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -25,38 +29,59 @@ public class MyGymController  implements Initializable{
 	private Button homeButton;
 	@FXML
 	private PieChart chartOfPie;
-<<<<<<< HEAD
+	
+	//database:GED
+	//table:gymequip
+	//table:machineusage
+	public ArrayList<GymEquipment> gymEquip(){
+		ArrayList<GymEquipment> equipments = new ArrayList<GymEquipment>();
+		Connection c = null;
+		try{
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://192.241.213.248/GED";
+	        String username = "allen3just";
+	        String password = "Justanswer30!";
+	        
+	        c = DriverManager.getConnection( url, username, password );
+	        Statement stmt = c.createStatement();
+	        ResultSet rs = stmt.executeQuery( "select * from gymequip;" );
+	        
+	        while( rs.next() ){
+            	
+                GymEquipment equipment = new GymEquipment( rs.getInt( "id" ),
+                    rs.getString( "name" ), rs.getInt( "numb" ));
+                
+                equipments.add( equipment );
+            }
+	        
+		}
+		catch( Exception e ){
+			e.printStackTrace();
+	    }finally{
+	    	try{
+                if( c != null ) c.close();
+            }
+            catch( Exception e ){
+            	e.printStackTrace();
+            }
+	    }
+		
+		return equipments;
+	}
+	
 	@FXML
     private LineChart<String,Number> dailyHistory;
 	
-=======
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
-	//TEST
->>>>>>> c194e16d5ccaca276e6334da3f397e1d59e5bad5
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		ObservableList<PieChart.Data> pieChartData =
-	            FXCollections.observableArrayList(
-	            new PieChart.Data("Cycling Machine (3)", 3),
-	            new PieChart.Data("Treadmill (3)", 2),
-	            new PieChart.Data("Stair Master (2)", 2),
-	            new PieChart.Data("Elliptical (3)", 3),
-				new PieChart.Data("Free (2)", 2));
+		ArrayList<GymEquipment> equipments = gymEquip();
+		
+		ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
+		
+		for(int i=0; i < equipments.size(); i++){
+			pieChartData.add(new PieChart.Data(equipments.get(i).getName() + "(" + equipments.get(i).getNumb() + ")", equipments.get(i).getNumb()));
+		}
+		
 	    chartOfPie.setData(pieChartData);
 	    chartOfPie.setLabelsVisible(false);
 	    chartOfPie.setLegendVisible(true);
