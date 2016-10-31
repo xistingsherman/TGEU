@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.text.*?>
@@ -30,9 +31,100 @@
                         <Font size="24.0" />
                      </font>
                 </TitledPane>
-                <TitledPane animated="false" text="Machine Usage">
+                <TitledPane animated="false" text="Machine Usage" textAlignment="CENTER">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="415.0" prefWidth="349.0">
+                           <children>
+                              <HBox alignment="CENTER" spacing="40.0">
+                                 <children>
+                                    <ImageView fx:id="bike1" fitHeight="80.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@bike.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="bike2" fitHeight="80.0" fitWidth="90.0" layoutX="117.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@bike.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="bike3" fitHeight="80.0" fitWidth="90.0" layoutX="229.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@bike.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="-1.0" layoutY="99.0" spacing="40.0">
+                                 <children>
+                                    <ImageView fx:id="treadmill1" fitHeight="80.0" fitWidth="90.0" layoutX="-1.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@running.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="treadmill2" fitHeight="80.0" fitWidth="90.0" layoutX="107.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@running.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="treadmill3" fitHeight="80.0" fitWidth="90.0" layoutX="215.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@running.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="-1.0" layoutY="207.0" spacing="20.0">
+                                 <children>
+                                    <ImageView fx:id="stairmaster1" fitHeight="80.0" fitWidth="90.0" layoutX="-1.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@stairs.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="stairmaster2" fitHeight="80.0" fitWidth="90.0" layoutX="106.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@stairs.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="stairmaster3" fitHeight="80.0" fitWidth="90.0" layoutX="214.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@stairs.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="-1.0" layoutY="296.0" spacing="40.0">
+                                 <children>
+                                    <ImageView fitHeight="80.0" fitWidth="90.0" layoutX="-1.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@elliptical.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="80.0" fitWidth="90.0" layoutX="99.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@elliptical.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="80.0" fitWidth="90.0" layoutX="214.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@elliptical.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
                   </content>
                      <font>
                         <Font size="24.0" />
