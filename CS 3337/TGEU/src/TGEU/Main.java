@@ -3,6 +3,7 @@ package TGEU;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -17,6 +18,8 @@ public class Main extends Application {
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		//http://stackoverflow.com/questions/16783737/how-can-i-set-an-icon-to-the-window-of-a-javafx-application
+		primaryStage.getIcons().add(new Image(Main.class.getResource("icon2.png").toExternalForm()));
 		stage = primaryStage;
 		
 		pane = FXMLLoader.load(getClass().getResource("Login.fxml"));
@@ -25,7 +28,7 @@ public class Main extends Application {
 		primaryStage.setResizable(false);
 		primaryStage.setScene(scene);
 		LoginController.setStage(stage);
-		primaryStage.setTitle("Gym Bro Demo");
+		primaryStage.setTitle("Gym Bro");
 		primaryStage.show();
 		
 	}

@@ -81,20 +81,29 @@
                               </HBox>
                               <HBox layoutX="-1.0" layoutY="207.0" spacing="20.0">
                                  <children>
-                                    <ImageView fx:id="stairmaster1" fitHeight="80.0" fitWidth="90.0" layoutX="-1.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="stairmaster1" fitHeight="85.0" fitWidth="75.0" layoutX="-1.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@stairs.png" />
                                        </image>
+                                       <HBox.margin>
+                                          <Insets right="25.0" />
+                                       </HBox.margin>
                                     </ImageView>
-                                    <ImageView fx:id="stairmaster2" fitHeight="80.0" fitWidth="90.0" layoutX="106.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="stairmaster2" fitHeight="85.0" fitWidth="75.0" layoutX="106.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@stairs.png" />
                                        </image>
+                                       <HBox.margin>
+                                          <Insets right="25.0" />
+                                       </HBox.margin>
                                     </ImageView>
-                                    <ImageView fx:id="stairmaster3" fitHeight="80.0" fitWidth="90.0" layoutX="214.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                    <ImageView fx:id="stairmaster3" fitHeight="85.0" fitWidth="75.0" layoutX="214.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
                                           <Image url="@stairs.png" />
                                        </image>
+                                       <HBox.margin>
+                                          <Insets right="25.0" />
+                                       </HBox.margin>
                                     </ImageView>
                                  </children>
                                  <padding>
