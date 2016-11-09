@@ -44,4 +44,5 @@
 <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
+<fullyQualifiedTypeName name="javafx.beans.property.SimpleStringProperty"/>
 </qualifiedTypeNameHistroy>

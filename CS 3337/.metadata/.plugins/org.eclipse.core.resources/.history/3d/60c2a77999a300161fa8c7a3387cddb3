@@ -1,0 +1,66 @@
+package TGEU;
+
+import javafx.beans.property.SimpleStringProperty;
+
+public class Food{
+	 
+    private SimpleStringProperty totalFat;
+    private SimpleStringProperty cholesterol;
+    private SimpleStringProperty sodium;
+    private SimpleStringProperty totalCarbs;
+    private SimpleStringProperty protein;
+
+    private void Person(String fat, String chol, String salt, String carbs, String protein) {
+        this.totalFat = new SimpleStringProperty(fat);
+        this.cholesterol = new SimpleStringProperty(chol);
+        this.sodium = new SimpleStringProperty(salt);
+        this.totalCarbs = new SimpleStringProperty(carbs);
+        this.protein = new SimpleStringProperty(protein);
+    }
+
+    public String getFat() {
+        return totalFat.get();
+    }
+
+    public void setFat(String x) {
+        totalFat.set(x);
+    }
+
+    public String getCholesterol() {
+        return cholesterol.get();
+    }
+
+    public void setCholesterol(String x) {
+        cholesterol.set(x);
+    }
+    public String getSodium() {
+        return sodium.get();
+    }
+
+    public void setSodium(String fName) {
+        sodium.set(fName);
+    }
+
+    public String getCholesterol() {
+        return cholesterol.get();
+    }
+
+    public void setCholesterol(String fName) {
+        cholesterol.set(fName);
+    }
+    public String getFat() {
+        return totalFat.get();
+    }
+
+    public void setFat(String fName) {
+        totalFat.set(fName);
+    }
+
+    public String getCholesterol() {
+        return cholesterol.get();
+    }
+
+    public void setCholesterol(String fName) {
+        cholesterol.set(fName);
+    }
+}

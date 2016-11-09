@@ -23,5 +23,15 @@
             <Font size="35.0" />
          </font>
       </Button>
+      <Button fx:id="alhambraButton1" disable="true" mnemonicParsing="false" onAction="#selectAlhambra" text="Pasadena">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="alhambraButton2" disable="true" mnemonicParsing="false" onAction="#selectAlhambra" text="San Gabriel">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
    </children>
 </VBox>

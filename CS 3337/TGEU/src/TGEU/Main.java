@@ -29,8 +29,6 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 		LoginController.setStage(stage);
 		primaryStage.setTitle("Gym Bro");
-		primaryStage.show();
-		
+		primaryStage.show();	
 	}
-
 }

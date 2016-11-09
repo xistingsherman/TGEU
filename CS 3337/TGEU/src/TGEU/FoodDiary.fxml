@@ -44,8 +44,8 @@
                   <TableView fx:id="nutritionTable" layoutY="182.0" prefHeight="192.0" prefWidth="348.0">
                     <columns>
                       <TableColumn editable="false" prefWidth="106.0" resizable="false" sortable="false" />
-                      <TableColumn editable="false" minWidth="0.0" prefWidth="118.0" resizable="false" sortable="false" />
-                        <TableColumn editable="false" prefWidth="122.0" resizable="false" sortable="false" />
+                      <TableColumn editable="false" minWidth="0.0" prefWidth="118.0" resizable="false" sortable="false" text="g" />
+                        <TableColumn editable="false" prefWidth="122.0" resizable="false" sortable="false" text="\% Daily Value" />
                     </columns>
                   </TableView>
                   <Label fx:id="foodName" layoutX="144.0" layoutY="114.0" prefHeight="35.0" prefWidth="61.0" text="Pizza">
